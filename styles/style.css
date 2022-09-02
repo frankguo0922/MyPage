@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+body .Orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 110vh;
+}
+
+header nav ul {
+  padding: 2rem;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  list-style: none;
+}
+header nav ul li a {
+  font-size: 1.75rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+header nav ul li .first {
+  color: aqua;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+main .left {
+  flex: 3 1 500px;
+  padding: 2rem;
+}
+main .left h1 {
+  font-size: 4rem;
+  color: aquamarine;
+}
+main .left p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+main .right {
+  flex: 1 1 600px;
+  position: relative;
+}
+main .right img {
+  position: absolute;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  top: 35vh;
+  right: 20vw;
+  transform: translateY(-50%);
+}
+main section.table {
+  flex: 3 1 500px;
+  padding: 2rem;
+}
+main section.table tr {
+  border-collapse: collapse;
+  transition: all 0.2s;
+}
+main section.table tr td {
+  font-size: 1.5rem;
+  border-bottom: 2px solid gray;
+  padding: 1rem;
+}
+main section.table tr:hover {
+  background-color: rgb(203, 247, 232);
+}
+main section.bu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  flex: 1 1 600px;
+}
+main section.bu img {
+  width: 30vw;
+  box-shadow: 50px 50px rgb(111, 248, 202);
+}
+main section.form {
+  flex: 1 1 500px;
+  border-right: 0.2rem solid gray;
+}
+main section.form form {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+main section.form form div {
+  margin: 0.5rem;
+  margin-right: 0.5rem;
+}
+main section.form form div label {
+  font-size: 1.5rem;
+}
+main section.form form div input, main section.form form div textarea {
+  background-color: rgb(183, 255, 245);
+  color: rgb(11, 95, 250);
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  width: 90%;
+}
+main section.form form div textarea {
+  vertical-align: top;
+}
+main section.form form button {
+  align-self: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  background-color: rgb(183, 255, 245);
+  border: none;
+  color: gray;
+  cursor: pointer;
+  border-radius: 10px;
+}
+main section.contact {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+main section.contact div.content h2 {
+  margin: 2rem 0rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+footer img {
+  padding: 0rem 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  body .Orange {
+    opacity: 0.5;
+  }
+  header nav ul {
+    flex-direction: column;
+    width: 30%;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+  }
+  header nav ul li a {
+    display: block;
+    border-bottom: 2px solid rgb(75, 75, 75);
+  }
+  main .right {
+    display: flex;
+    justify-content: center;
+  }
+  main .right img {
+    margin-bottom: 2rem;
+    position: static;
+    transform: none;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.bu img {
+    width: 50vw;
+    box-shadow: none;
+  }
+  main section.form {
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */
